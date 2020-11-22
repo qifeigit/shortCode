@@ -1,7 +1,7 @@
 package org.qifei;
 
 import org.junit.Test;
-
+//线程交替按顺序打印0123
 public class PrintOneByOne {
     Object o=new Object();
     Boolean f=true;
@@ -9,7 +9,7 @@ public class PrintOneByOne {
         public void run() {
             synchronized (o){
                 for(int i=0;i<20;i++){
-                    System.out.println("线程1执行第"+i+"次！");
+                    System.out.println(i * 2);
                     o.notify();
                     if(f){
                         f=false;
@@ -27,7 +27,7 @@ public class PrintOneByOne {
         public void run() {
             synchronized (o){
                 for(int i=0;i<20;i++){
-                    System.out.println("线程2执行第"+i+"次！");
+                    System.out.println((i * 2)+ 1);
                     o.notify();
                     if(!f){
                         f=true;
