@@ -2,6 +2,7 @@ package org.qifei;
 
 import org.junit.Test;
 
+import java.util.concurrent.ThreadPoolExecutor;
 import java.util.concurrent.atomic.AtomicInteger;
 import java.util.concurrent.locks.AbstractQueuedSynchronizer;
 
@@ -22,6 +23,7 @@ public class PrintIsoscelesTriangle {
     @Test
     public void test() {
         IsoscelesTriangle();
-
+        AbstractQueuedSynchronizer a ;
+        ThreadPoolExecutor a = new ThreadPoolExecutor();
     }
 }
