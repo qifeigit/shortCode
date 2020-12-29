@@ -23,7 +23,5 @@ public class PrintIsoscelesTriangle {
     @Test
     public void test() {
         IsoscelesTriangle();
-        AbstractQueuedSynchronizer a ;
-        ThreadPoolExecutor a = new ThreadPoolExecutor();
     }
 }
